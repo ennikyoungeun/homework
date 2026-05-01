@@ -1,0 +1,41 @@
+단위
+-절대단위 :px
+-상대단위
+  % 해당속성의 상위요소 속성값에 상대적
+  em : 부모요소의 텍스트크기에 상대적
+  rem:html태그의 텍스트 크기에 상대적
+
+  vw,vh :뷰포트 너비, 높이기준 
+
+색상표기법
+-rgb
+-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 색상표기 */
+    .cls1 { color: aqua;} 
+    /* rgb 표기 */
+    .cls2 {color: rgb(8, 8, 172);}
+    /* rgba (투명도0~1불투명) */
+    .cls3 {color: rgb(8, 8, 172 0);}
+
+  </style>
+  
+</head>
+<body>
+  
+  <h1 class="cls1">color check 1</h1>
+
+  <h1 class="cls2">color check 2</h1>
+
+  <h1 class="cls3">color check 3</h1>
+
+  <h1 class="cls4">color check 4</h1>
+</body>
+</html>
