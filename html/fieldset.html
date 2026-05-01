@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="">
+        <fieldset>
+        <!-- fieldset 상호작용요소 그룹화-->
+        <!--legend 그룹화한 fieldset에 이름지정  -->
+        <legend>기본정보</legend>
+        <label for="id">아이디:<input type="text" id="id"></label>
+        <label for="pw">비밀번호:<input type="password" id="pw"></label>
+        </fieldset>
+
+        <fieldset>
+    
+        <legend>옵션정보</legend>
+        <label for="id">가족관계:<input type="text" id="id"></label>
+        <label for="pw">생년월일:<input type="text" id="pw"></label>
+        </fieldset>
+
+        <form action="" method=""></form>
+        <textarea>여러줄을 입력할수있음</textarea>
+        </form>
+
+        <>
+            <!-- select 태그<선택태그>는 옵션을 항상사용 -->
+            <select>
+                <option value="male">남</option>
+                <option value="female">여</option>
+            </select>
+
+            <!-- 옵션태그 그룹화 label을 꼭-->
+            <select>
+                <optgroup label="성별">
+                    <option value="male">남</option>
+                    <option value="female">여</option>
+                </optgroup>
+            <!-- <select태그는 함께 사용할수있는 속성이 있음
+             size:보여지는 갯수의 값,multiple:다중선택가능,selected:먼저 노출-->
+            </select>
+
+            <button>안녕</button>
+            <!-- 버튼태그 -->
+
+            <!-- form에서 사용되는 공통속성 -->
+            disabled:  선택이 안되게 하는것,readonly:읽기전용,maxlangth:글자수제한
+            <input type="checkbox" checked>
+            <!--checkbox에서 사용되는 checked는 체크가 미리 되어보임  -->
+            <input type="text" placeholder="아이디">
+            <!--placeholder: 입력요소에 대한 힌트가 보이는것처럼 흐리게 입력되어보임 -->
+        </form>
+    </form>
+</body>
+</html>

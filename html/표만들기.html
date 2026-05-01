@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <!-- caption:내가만들려고 하는 표의 제목을 나타냄 -->
+        <!-- tr:행 th(제목성격),td:열 -->
+        <!-- table에 border를 사용하면 표테두리 생성 -->
+        <caption>가격표</caption>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총금액</td>
+                <td colspan="3">2500원</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+            </tr>
+        </tbody>
+        
+        <!-- 표 병합 행병합:rowspan, 열병합:colspan-->
+        <!-- 그룹화-thead:표에서 제목을 나타내는 영역을 그룹화
+           tbody:순수한 데이터, tfoot:꼬리말,마무리영역-->
+        <!--구조화 할때는 tfoot가 tbody보다 먼저 작성되어야 함 -->
+    </table>
+</body>
+</html>

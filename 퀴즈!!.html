@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>포트폴리오 & 신청 페이지</title>
+</head>
+
+<body>
+
+<header id="top" class="header" title="사이트 헤더">
+    <h1>나의 포트폴리오</h1>
+</header>
+
+<main>
+
+    <!-- 프로필 -->
+    <section class="profile" id="profile">
+        <h2>프로필</h2>
+
+        <img src="me.jpg" alt="프로필 이미지" title="내 사진">
+
+        <p>이름: 홍길동</p>
+        <p>직업: 웹 개발자</p>
+
+        <h3>기술 목록</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li><strong>JavaScript</strong></li>
+        </ul>
+    </section>
+
+    <!-- 멀티미디어 -->
+    <section class="media">
+        <h2>소개 영상</h2>
+
+        <video width="300" controls>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- 기술 표 -->
+    <section class="table-section">
+        <h2>기술 수준</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">기술</th>
+                    <th scope="col">수준</th>
+                    <th scope="col">경험</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>상</td>
+                    <td>2년</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>중</td>
+                    <td>1년</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>중</td>
+                    <td>1년</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 신청 폼 -->
+    <section class="form-section">
+        <h2>문의 / 신청</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>기본 정보</legend>
+
+                <label>이름</label>
+                <input type="text" placeholder="이름 입력" id="name">
+
+                <br><br>
+
+                <label>이메일</label>
+                <input type="email" placeholder="email@example.com">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>추가 정보</legend>
+
+                <p>관심 기술</p>
+                <label><input type="checkbox"> HTML</label>
+                <label><input type="checkbox"> CSS</label>
+                <label><input type="checkbox"> JS</label>
+
+                <p>경험 수준</p>
+                <label><input type="radio" name="level"> 초급</label>
+                <label><input type="radio" name="level"> 중급</label>
+                <label><input type="radio" name="level"> 고급</label>
+
+                <br><br>
+
+                <label>자기소개</label><br>
+                <textarea></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit" class="btn">제출</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p title="저작권 정보">© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>

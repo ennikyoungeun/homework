@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선언부가 같은 경우 한번에 그룹지어 선택자 지정 */
+        h1, p { color:blueviolet;}
+        /* 자식선택자 지정 */
+        /* dl > dd { color: green;} */
+        /* 하위선택자 */
+        dl dd { color: green;}
+        /* 인접형제선택자 (순서 차례로) 바로 인접해 있는것만 */
+        h2+h3 {color: red;}
+        /* 일반형제선택자(순서 차례로선택된것 모두)  */
+        h4~h5 {color: orange;}
+    </style>
+</head>
+<body>
+    
+    <h1 class="red blue">h1 tag</h1>
+    <p class="red">p태그</p>
+    <div>
+        <dl>
+            <dt>css</dt>
+            <dd>css는 cascading style sheets의 약자이다.</dd>
+            <dd class="red">css는 cascading style sheets의 약자이다.</dd>
+        </dl>
+    </div>
+
+    <h1>qwe</h1>
+    <h2>qwe</h2>
+    <h3>qwe</h3>
+    <h4>qweqwe</h4>
+    <h5>qweqweq</h5>
+    <h5>qweqweq</h5>
+
+</body>
+</html>

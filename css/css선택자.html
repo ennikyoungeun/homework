@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /* 전체 선택자 */
+        * {color:red;} 
+        /*  태그선택자 -태그이름으로 선택*/
+        p{color: black;}
+        /* id선택자, 아이디 속성은 한문서안에 1개*/
+        #h1 {color: brown;}
+        /* class 선택자, class속성은 같은 값 중복사용가능 */
+        .red {color: aqua;}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">h1 태그</h1>
+    <p>p태그</p>
+    <dl>
+        <dt>css</dt>
+        <dd>css는 cascading style sheets의 약자이다.</dd>
+        <dd class="red">css는 cascading style sheets의 약자이다.</dd>
+    </dl>
+</body>
+</html>

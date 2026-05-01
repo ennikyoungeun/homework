@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css기초문법</title>
+
+<!-- 외부 스타일시트 방법/별도의 css파일을 연결-->
+<link rel="stylesheet" href="별도.css"> 
+
+    <!-- 내부 스타일시트 방법-->
+    <style>
+        dt { color: red;}
+        /* 선택자 {}앞 와 선언부 {}안 선언부안에 여러개 사용가는 ;으로 구분 */
+    </style>
+
+</head>
+<body>
+    <!-- dl 정의용 목록 생성, dt 목록제목,dd 정의 내용 -->
+    <dl>
+        <dt>css</dt>
+        <dd>css는 cascading style sheets의 약자이다.</dd>
+    </dl>
+</body>
+</html>
+
+인라인 스타일시트변경방법
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+        <dt>css</dt>
+        <dd style="color: orange;">css는 cascading style sheets의 약자이다.</dd>
+        <!-- 직접 스타일시트를 입력해 변경할수있다. -->
+    </dl>
+</body>
+</html>
