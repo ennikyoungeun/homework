@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* p{
+            color: red;
+        }
+
+        p{
+            color: blue;
+        } */
+        
+        /* .inner {
+            color: red;
+        }
+        p{
+            color: blue;
+        } */
+        /* 개별성 점수가 class가 더 높아서 먼저 적용했어도 적용값이 red로 보임 */
+
+        .box .inner p {
+            color: orange;
+        }
+        .inner {
+            color: red;
+        }
+        p{
+            color: blue;
+        }
+        /* 개별성 점수가 높은 .box .inner p적용 */
+    </style>
+</head>
+<body>
+    <!-- css 선택자의 개별성 점수가 같으면 나중에 적용한것이 적용됨 
+     전체 0 태그는 1 클래스10 가상10 아이디100 인라인1000-->
+     <div class="box">
+        <div class="inner">
+            <p>p tag</p>
+        </div>
+     </div>
+</body>
+</html>
