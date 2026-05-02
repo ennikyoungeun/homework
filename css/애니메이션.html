@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            animation-name: bgchange;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            /* 반복횟수지정 */
+            /* animation-iteration-count: infinite; 무한반복 */
+            animation-iteration-count: 1;
+            animation-play-state: running;
+            animation-direction: reverse; /*100%~0% 순으로 거꾸로진행*/
+            animation-direction: alternate-reverse;
+        }
+        .box:hover {
+            animation-play-state: paused; /*실행정지*/
+        }
+
+        @keyframes bgchange {
+            0%{/*시작지점,from*/
+                background-color:blue;
+            }
+            25% {
+                background-color: pink;
+            }
+            50% {
+                background-color:brown;
+            }
+            75% {
+                background-color:aqua;
+            }
+            100%{/*종료지점,to*/
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+<!-- 애니메이션 효과 =@keyframes을 식별할수있는 고유한 이름지정,중복되면 안됨!
+ 
+ animation-name: bgchange; 지정한@keyframes이름
+ animation-duration: 2s;애니매이션 2초에걸쳐실행
+ animation-delay: 2s; 애니메이션 2초 지연후 실행
+<끝화면 조정>
+ animation-fill-mode:none; 끝화면이 초기스타일로 돌아옴
+ animation-fill-mode:forwards ; 시작전에 초기값유지후 실행,애니메이션이 끝나는지점에서 멈춤
+ animation-fill-mode:backwards; 애니메이션이 시작전부터 0%로 대기~종료시 원래초기상태
+ animation-fill-mode:both; 0%-100% 상태로 실행후 끝나는 지점에서 멈춤 
+<반복횟수지정>
+animation-iteration-count: 2; 2회 반복
+
+<실행순서조정>
+animation-direction: reverse;100%~0% 순으로 거꾸로진행
+animation-direction: alternate;홀수-순방향,짝수-역방향 순으로
+animation-direction: alternate-reverse;역->순->역->순
+ -->
