@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-1</title>
+    <style>
+
+        body {
+            height: 5000px;
+        }
+        .container {
+            background-color: lightgray;
+            width: 100%;
+            padding: 1rem;
+            overflow: auto;
+        }
+        .box {
+            width: 100px;
+            height:100px 
+        }
+        .red {
+            background-color: red;
+            float: left;
+            
+        }
+        .green {
+            background-color: green;
+            float: right;
+        }
+        .blue {
+            background-color: blue;
+            float: left;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>
+<!-- float 속성 -정렬
+    float: none;
+            float: left; 왼쪽정렬
+            float: right; 오른쪽 정렬
+    #float 속성은 absolute;처럼 떠서 다른요소가 위치를 인지하지못함
+    같은 float:;값을 입력한 요소들은 서로 인지가능.
+    float사용시엔 부모요소에 overflow:;적용
+    -->
