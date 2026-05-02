@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+            /* transition-property: background-color; 
+            transition-duration: 2s; */
+            transition-property: background-color, width; /*bgc와widht모두 적용*/
+            transition-duration: 2s, 5s; /* bgc-2초,width-5초에걸쳐전환*/
+            /* transition-delay: 3s;*/  /* 3초뒤발생 */
+            transition-timing-function: linear;
+        }
+
+        body:hover .box{ /*body에 마우스를 올리면 .box에 적용*/
+            width: 300px;
+            background-color: blue;
+        }
+
+        .box:nth-of-type(1) {
+            transition-timing-function: linear;
+        }
+        .box:nth-of-type(2) {
+            transition-timing-function: ease;
+        }
+        .box:nth-of-type(3) {
+            transition-timing-function: ease-in;
+        }
+        .box:nth-of-type(4) {
+            transition-timing-function: ease-out;
+        }
+        .box:nth-of-type(5) {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+</html>
+
+<!-- 
+(전환할 대상 명시) 
+transition-property:all ; 모든속성에 전환효과를 사용하겠다,
+transition-property:none; 적용하지 않음
+transition-property:직접입력;
+(전환시간)
+transition-duration: 2s; 2초에 걸쳐 전환
+
+transition-delay: ;전환전 지연시간지정
+transition-timing-function: linear; 일정한 속도로전환 /개발자도구에서 그래프확인,조정가능
+
+-->
